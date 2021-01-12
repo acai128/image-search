@@ -31,7 +31,7 @@ REACT_APP_API_KEY=[enter your API key here]
 * Access the API key via the process.env object in the SearchForm.js file: 
 
 ```bash
-//Example: process.env.REACT_APP_API_KEY)
+//Example: process.env.REACT_APP_API_KEY
 ```
 * Install the project's dependencies 
 
