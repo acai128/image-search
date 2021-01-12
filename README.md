@@ -2,6 +2,9 @@
 
 Image Search is a tool used to find pictures by entering a key word in the search field.
 
+Deployed site: https://acai128.github.io/image-search/
+
+
 ## Technologies 
 * JavaScript 
 * ReactJS
