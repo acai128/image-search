@@ -1,6 +1,6 @@
 # Image Search Engine 
 
-Image Search is used to find pictures by entering a key word in the search field 
+Image Search is a tool used to find pictures by entering a key word in the search field.
 
 ## Technologies 
 * JavaScript 
@@ -8,6 +8,7 @@ Image Search is used to find pictures by entering a key word in the search field
 * HTML
 * CSS 
 * Pixabay API 
+* React Bootstrap
 
 ## Installation
 

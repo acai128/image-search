@@ -3,7 +3,7 @@ import axios from 'axios';
 // import './SearchForm.css'; 
 import { Button, Form, FormControl, Container, Row, Col } from 'react-bootstrap'; 
 
-// const API_Key = `process.env.REACT_APP_API_KEY`
+const API_Key = `${process.env.REACT_APP_API_KEY}`
 const url = "https://pixabay.com/api"
 
 function SearchForm(){
@@ -56,7 +56,7 @@ function SearchForm(){
 
     useEffect(() =>{
         async function fetchData() {
-            const request = await axios.get(`${url}/?key=${process.env.REACT_APP_API_KEY}&q=${inputFromButton}&safesearch=true&per_page=${amountResult}`); 
+            const request = await axios.get(`${url}/?key=${API_Key}&q=${inputFromButton}&safesearch=true&per_page=${amountResult}`); 
             // console.log(request.data.hits)
             // let url1 = window.URL.createObjectURL(request.data.hits); 
             // a.href = url1; 
@@ -151,7 +151,7 @@ function SearchForm(){
     return (
         <div>
           {/* <h1>Image Search</h1> */}
-          <Container fluid>
+          <Container fluid={true}>
             {/* <Row> */}
                 {/* <Col> */}
                 <Form onSubmit={searchPhotos}>
@@ -195,7 +195,7 @@ function SearchForm(){
                             <option>25</option>
                         </Form.Control>
                 </Form.Group>
-                <Button onClick={handleClick}>Submit</Button>
+                <Button onClick={handleClick}>Search</Button>
 
             </Form>
             {/* </Col> */}
@@ -248,7 +248,7 @@ function SearchForm(){
             {imagesResult.map(img => {
                 return (
                     <a href={img.largeImageURL} target="_blank">
-                    <img class="thumbnail" width="200" height="200"src={img.webformatURL} alt={img.tags}/>
+                    <img className="image" width="200" height="200" src={img.webformatURL} alt={img.tags}/>
                     </a>
                 )
             })}
@@ -258,3 +258,4 @@ function SearchForm(){
     }
 
 export default SearchForm; 
+

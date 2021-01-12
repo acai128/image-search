@@ -13,4 +13,10 @@
 
 .Container-fluid {
     padding: 20px;
+    width: 100%; 
+}
+
+.image {
+    flex: 100%;
+    border-radius: 80px;
 }
