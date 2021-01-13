@@ -195,7 +195,7 @@ function SearchForm(){
                             <option>25</option>
                         </Form.Control>
                 </Form.Group>
-                <Button onClick={handleClick}>Search</Button>
+                <Button data-testid="search-button" onClick={handleClick}>Search</Button>
 
             </Form>
             {/* </Col> */}
