@@ -13,6 +13,12 @@ Deployed site: https://acai128.github.io/image-search/
 * Pixabay API 
 * React Bootstrap
 
+## Features
+
+User enters key word in search field, select number of results, and click "Search" button to get results of pictures 
+
+![](recording(1).gif)
+
 ## Installation
 
 * Clone the repo to your local machine: 
